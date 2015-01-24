@@ -1,9 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ExplorerAI_Script.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GrabbingScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\ExplorerAI_Script.cs" Line="55" Column="3" />
-      <File FileName="Assets\OVR\Scripts\OVRCameraRig.cs" Line="177" Column="46" />
+      <File FileName="Assets\Scripts\ExplorerAI_Script.cs" Line="40" Column="41" />
+      <File FileName="Assets\LeapMotion\Scripts\Utils\GrabbableObject.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PullableBlock.cs" Line="1" Column="1" />
+      <File FileName="Assets\LeapMotion\Scripts\Utils\GrabbingHand.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TitanHand.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GrabbingScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\LeapMotion\Scripts\Hands\SkeletalFinger.cs" Line="1" Column="1" />
+      <File FileName="Assets\LeapMotion\Scripts\Hands\SkeletalHand.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SectionController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ExplorerCameraMonitor.cs" Line="12" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

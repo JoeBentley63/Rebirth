@@ -128,7 +128,11 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRUGUI.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRVisionGuide.cs" />
      <Compile Include="Assets\Scripts\ExplorerAI_Script.cs" />
-     <Compile Include="Assets\Scripts\Explorer_model.cs" />
+     <Compile Include="Assets\Scripts\ExplorerCameraMonitor.cs" />
+     <Compile Include="Assets\Scripts\HandPlatform.cs" />
+     <Compile Include="Assets\Scripts\PullableBlock.cs" />
+     <Compile Include="Assets\Scripts\SectionController.cs" />
+     <Compile Include="Assets\Scripts\TitanHand.cs" />
      <Compile Include="Assets\Scripts\WorldManager.cs" />
      <None Include="Assets\LeapMotion\Resources\LeapIRUndistorted.shader" />
      <None Include="Assets\Plugins\donotdelete.txt" />
@@ -145,6 +149,7 @@
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
      <None Include="Assets\Plugins\x86\donotdelete.txt" />
      <None Include="Assets\LeapMotion\Resources\LeapRGBUndistorted.shader" />
@@ -154,6 +159,10 @@
  <Reference Include="LeapCSharp.NET3.5">
  <HintPath>C:/Users/student/projects/Rebirth/Rebirth/Assets/LeapCSharp.NET3.5.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{12117069-18D0-5669-4B32-47C8A963C4E6}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ExplorerAI_Script : MonoBehaviour {
 	public float movementSpeed = 1;
-	
+	public LayerMask raycastCollidables;
 	public enum MovementStates{
 		STANDING,
 		WALKINGRIGHT,
@@ -38,9 +38,9 @@ public class ExplorerAI_Script : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider collider){
-		ChangeMotionState (collider.tag);
+		string tag = collider.tag;
+		ChangeMotionState(tag);
 	}
-	
 
 	public void ChangeMotionState(string colliderTriggerTag){
 		switch (colliderTriggerTag){
@@ -49,13 +49,18 @@ public class ExplorerAI_Script : MonoBehaviour {
 		case "WALKLEFT" : this.currentMovementState = MovementStates.WALKINGLEFT; break;
 		case "WALKUP" : this.currentMovementState = MovementStates.WALKINGUP; break;
 		case "WALKDOWN" : this.currentMovementState = MovementStates.WALKINGDOWN; break;
-			
-		default: this.currentMovementState = MovementStates.STANDING; break;
 		}
 	}
 	
 	public void WalkingStateOnUpdate(Vector3 direction){
-		this.rigidbody.velocity = direction * movementSpeed;
+		if(!Physics.Raycast(this.gameObject.transform.position,direction,1,raycastCollidables))
+		   {
+			this.rigidbody.velocity = direction * movementSpeed;
+		}
+		else{
+			this.rigidbody.velocity = Vector3.zero;
+		}
+
 	}
 	
 	public void StandingStateOnUpdate(){
