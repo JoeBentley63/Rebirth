@@ -1,8 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\LeapMotion+OVR\SystemWipe\QuickSwitcher.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ExplorerAI_Script.cs">
     <Files>
-      <File FileName="Assets\LeapMotion+OVR\SystemWipe\QuickSwitcher.cs" Line="2" Column="1" />
+      <File FileName="Assets\Scripts\ExplorerAI_Script.cs" Line="55" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
