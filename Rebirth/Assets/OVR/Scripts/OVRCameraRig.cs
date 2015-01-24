@@ -134,7 +134,7 @@ public class OVRCameraRig : MonoBehaviour
 		if (leftEyeAnchor == null)
 			leftEyeAnchor = ConfigureEyeAnchor(OVREye.Left);
 		if (centerEyeAnchor == null)
-			centerEyeAnchor = ConfigureEyeAnchor(OVREye.Center);
+			//centerEyeAnchor = ConfigureEyeAnchor(OVREye.Center);
 		if (rightEyeAnchor == null)
 			rightEyeAnchor = ConfigureEyeAnchor(OVREye.Right);
 
