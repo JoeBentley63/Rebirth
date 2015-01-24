@@ -261,10 +261,7 @@ MonoBehaviour:
   - 486974202772657475726e2720746f2072657365742e2e
   Scenes:
   - 565244656d6f5f54757363616e79
-  IPDIncrement: .000250000012
   PredictionIncrement: .00100000005
-  FOVIncrement: .200000003
-  HeightIncrement: .00999999978
   SpeedRotationIncrement: .0500000007
   LayerName: 44656661756c74
   CrosshairImage: {fileID: 2800000, guid: 64ce76f827a71b44da62c30c0b506fd2, type: 3}
@@ -287,7 +284,7 @@ MonoBehaviour:
   RotationAmount: 1.5
   RotationRatchet: 45
   HmdRotatesY: 1
-  GravityModifier: .379000008
+  GravityModifier: 0
   useProfileHeight: 1
 --- !u!114 &325514819
 MonoBehaviour:
@@ -359,6 +356,14 @@ Prefab:
       propertyPath: m_Radius
       value: .00999999978
       objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: 3396c6816a092d647a68cbaade7c78bd, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 3396c6816a092d647a68cbaade7c78bd, type: 2}
+      propertyPath: HmdRotatesY
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3396c6816a092d647a68cbaade7c78bd, type: 2}
   m_RootGameObject: {fileID: 325514815}
@@ -419,13 +424,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd815635398474cbbba564563a209f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doUpdate: 1
+  rescaleController: 1
   imageIndex: 0
-  imageColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  imageColor: {r: 1, g: 1, b: 1, a: 1}
   gammaCorrection: 1.29999995
+  overlayImage: 0
   undistortImage: 1
   blackIsTransparent: 1
 --- !u!23 &416650221
@@ -512,13 +516,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd815635398474cbbba564563a209f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doUpdate: 1
+  rescaleController: 1
   imageIndex: 1
-  imageColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  imageColor: {r: 1, g: 1, b: 1, a: 1}
   gammaCorrection: 1.29999995
+  overlayImage: 0
   undistortImage: 1
   blackIsTransparent: 1
 --- !u!23 &429887143
@@ -658,6 +661,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1009147229}
   - 114: {fileID: 1009147230}
+  - 114: {fileID: 1009147231}
   m_Layer: 0
   m_Name: HandController
   m_TagString: Untagged
@@ -683,6 +687,31 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400010, guid: 3396c6816a092d647a68cbaade7c78bd,
     type: 2}
   m_PrefabInternal: {fileID: 338800526}
+  m_GameObject: {fileID: 1009147228}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4e0350c46ae405b8db39262c18b8f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  separateLeftRight: 1
+  leftGraphicsModel: {fileID: 11400010, guid: e734beeefc33b46219db092ade06f82f, type: 2}
+  leftPhysicsModel: {fileID: 11400008, guid: 4b359b2f0d7d14ef0a97b45ec153a3ef, type: 2}
+  rightGraphicsModel: {fileID: 11400010, guid: fb2d6e2c3c6ef431caaff3cf8beb3b75, type: 2}
+  rightPhysicsModel: {fileID: 11400008, guid: 4b359b2f0d7d14ef0a97b45ec153a3ef, type: 2}
+  toolModel: {fileID: 0}
+  isHeadMounted: 1
+  mirrorZAxis: 0
+  destroyHands: 1
+  handMovementScale: {x: 1, y: 1, z: 1}
+  enableRecordPlayback: 0
+  recordingAsset: {fileID: 0}
+  recorderSpeed: 1
+  recorderLoop: 1
+--- !u!114 &1009147231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1009147228}
   m_Enabled: 1
   m_EditorHideFlags: 0
